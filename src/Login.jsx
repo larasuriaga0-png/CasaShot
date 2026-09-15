@@ -53,7 +53,6 @@ function Login() {
 
   return (
     <div className="login-page">
-
       <button
         className="back-button"
         onClick={handleBackToWebsite}
@@ -69,7 +68,6 @@ function Login() {
       </div>
 
       <div className="login-card">
-
         <h1>CREATE ACCOUNT</h1>
 
         <p className="already-account">
@@ -77,9 +75,7 @@ function Login() {
         </p>
 
         <form onSubmit={handleSubmit}>
-
           <div className="name-row">
-
             <input
               type="text"
               name="firstName"
@@ -95,7 +91,6 @@ function Login() {
               value={formData.lastName}
               onChange={handleChange}
             />
-
           </div>
 
           <input
@@ -117,7 +112,6 @@ function Login() {
           />
 
           <div className="terms">
-
             <input
               type="checkbox"
               id="terms"
@@ -137,7 +131,6 @@ function Login() {
                 Terms & Conditions
               </a>
             </label>
-
           </div>
 
           {error && (
@@ -152,11 +145,8 @@ function Login() {
           >
             CREATE ACCOUNT
           </button>
-
         </form>
-
       </div>
-
     </div>
   );
 }
