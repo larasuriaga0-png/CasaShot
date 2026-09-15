@@ -44,7 +44,7 @@ function Login() {
       return;
     }
 
-    navigate("/next");
+    setError("Account created successfully!");
   };
 
   const handleBackToWebsite = () => {
@@ -130,7 +130,10 @@ function Login() {
 
             <label htmlFor="terms">
               I agree to the{" "}
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+              >
                 Terms & Conditions
               </a>
             </label>

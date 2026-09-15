@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Home.css";
+
 
 import backgroundImage from "./assets/event_background.jpg";
 import foodImage from "./assets/event_food.jpg";
@@ -25,9 +25,7 @@ function Home() {
         <div className="nav-right">
           <a href="#testimonials">Testimonials</a>
           <a href="#feedbacks">Feedbacks</a>
-
-          {/* Login/Signup */}
-          <Link to="/login">Login/Signup</Link>
+          <a href="#login">Login/Signup</a>
         </div>
       </nav>
 
