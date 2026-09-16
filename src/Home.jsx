@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+<Link to="/about">About Us</Link>
 
 import backgroundImage from "./assets/event_background.jpg";
 import foodImage from "./assets/event_food.jpg";
