@@ -9,32 +9,32 @@ import logoImage from "./assets/logo.jpg";
 function Home() {
   return (
     <div className="home">
-
-      {/* Navbar */}
+      {/* navbar */}
       <nav className="navbar">
         <div className="nav-left">
           <a href="#home">Home</a>
 
+          {/* Go to About CaterShot page */}
           <Link to="/about">About Us</Link>
 
           <a href="#faq">FAQ</a>
         </div>
 
-        {/* Logo */}
+        {/* logo */}
         <div className="logo">
           <img src={logoImage} alt="CaterShot Logo" />
         </div>
 
         <div className="nav-right">
           <a href="#testimonials">Testimonials</a>
-
           <a href="#feedbacks">Feedbacks</a>
 
+          {/* Go to Login page */}
           <Link to="/login">Login/Signup</Link>
         </div>
       </nav>
 
-      {/* Main */}
+      {/* main */}
       <section
         className="hero"
         id="home"
@@ -53,20 +53,14 @@ function Home() {
             delicious moments, and memories you'll cherish forever.
           </p>
 
-          <button className="start-button">
-            Start Planning
-          </button>
+          <button className="start-button">Start Planning</button>
         </div>
 
-        {/* Image sa gilid */}
+        {/* image sa gilid */}
         <div className="food-image">
-          <img
-            src={foodImage}
-            alt="Beautiful event setup"
-          />
+          <img src={foodImage} alt="Beautiful event setup" />
         </div>
       </section>
-
     </div>
   );
 }

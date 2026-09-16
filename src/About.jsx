@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Aboutus.css";
+import "./About.css";
 
 import backgroundImage from "./assets/event_food.jpg";
 
-function Aboutus() {
+function About() {
   const navigate = useNavigate();
 
   const handleBack = () => {
@@ -12,31 +12,31 @@ function Aboutus() {
   };
 
   const handleViewMore = () => {
-    navigate("/services");
+    navigate("/about-more");
   };
 
   return (
     <div
-      className="aboutus-page"
+      className="about-page"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
     >
-      <div className="aboutus-overlay"></div>
+      <div className="about-overlay"></div>
 
       {/* Back to Website */}
       <button
-        className="aboutus-back-button"
+        className="about-back-button"
         onClick={handleBack}
       >
         Back to website
       </button>
 
       {/* Main Content */}
-      <div className="aboutus-content">
+      <div className="about-content">
 
-        {/* Left Side */}
-        <div className="aboutus-box">
+        {/* Left Section */}
+        <div className="about-box">
           <h1>
             About
             <br />
@@ -62,11 +62,11 @@ function Aboutus() {
           </p>
         </div>
 
-        {/* Right Side */}
-        <div className="aboutus-what-box">
+        {/* Right Section */}
+        <div className="what-we-do-box">
           <h2>What We Do</h2>
 
-          <div className="aboutus-service">
+          <div className="service">
             <h3>➤ &nbsp; Designing Your Event</h3>
 
             <p>
@@ -75,7 +75,7 @@ function Aboutus() {
             </p>
           </div>
 
-          <div className="aboutus-service">
+          <div className="service">
             <h3>➤ &nbsp; Catering Your Event</h3>
 
             <p>
@@ -85,7 +85,7 @@ function Aboutus() {
             </p>
           </div>
 
-          <div className="aboutus-service">
+          <div className="service">
             <h3>➤ &nbsp; Adding Special Services</h3>
 
             <p>
@@ -100,14 +100,13 @@ function Aboutus() {
 
       {/* View More */}
       <button
-        className="aboutus-view-more"
+        className="view-more-button"
         onClick={handleViewMore}
       >
         VIEW MORE
       </button>
-
     </div>
   );
 }
 
-export default Aboutus;
+export default About;
