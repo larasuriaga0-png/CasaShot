@@ -13,7 +13,7 @@ function Home() {
       <nav className="navbar">
         <div className="nav-left">
           <a href="#home">Home</a>
-          <a href="#about">About Us</a>
+          <Link to="/about">About Us</Link>
           <a href="#faq">FAQ</a>
         </div>
 
