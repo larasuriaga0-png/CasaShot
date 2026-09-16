@@ -1,0 +1,231 @@
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: Georgia, "Times New Roman", serif;
+  overflow: hidden;
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.68);
+  z-index: 1;
+}
+
+/* Back Button */
+
+.about-back-button {
+  position: absolute;
+  top: 39px;
+  right: 45px;
+  width: 163px;
+  height: 36px;
+
+  border: none;
+  border-radius: 25px;
+
+  background-color: #eeeeee;
+  color: #333333;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+
+  cursor: pointer;
+  z-index: 5;
+
+  transition: 0.2s ease;
+}
+
+.about-back-button:hover {
+  background-color: white;
+  transform: scale(1.03);
+}
+
+/* Main Content */
+
+.about-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 84px;
+
+  padding-top: 74px;
+  box-sizing: border-box;
+}
+
+/* About CaterShot Box */
+
+.about-box {
+  width: 513px;
+  min-height: 494px;
+
+  background: rgba(91, 0, 25, 0.78);
+
+  padding: 19px 16px 20px 16px;
+  box-sizing: border-box;
+
+  color: white;
+}
+
+.about-box h1 {
+  margin: 0 0 17px 0;
+
+  font-size: 62px;
+  line-height: 1.02;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.about-box p {
+  margin: 0 0 5px 0;
+
+  font-size: 16px;
+  line-height: 1.34;
+  font-weight: 600;
+
+  text-align: justify;
+}
+
+/* What We Do */
+
+.what-we-do-box {
+  width: 337px;
+  min-height: 410px;
+
+  margin-top: 76px;
+
+  background: rgba(91, 0, 25, 0.78);
+
+  padding: 20px 27px;
+  box-sizing: border-box;
+
+  color: white;
+}
+
+.what-we-do-box h2 {
+  margin: 0 0 17px 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.service {
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  margin: 0 0 7px 0;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.service p {
+  margin: 0;
+
+  padding-left: 10px;
+
+  font-size: 14px;
+  line-height: 1.28;
+  font-weight: 600;
+}
+
+/* View More */
+
+.view-more-button {
+  position: absolute;
+
+  left: 135px;
+  bottom: 74px;
+
+  width: 145px;
+  height: 44px;
+
+  border: none;
+
+  background-color: #eeeeee;
+  color: #222222;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  z-index: 5;
+
+  transition: 0.2s ease;
+}
+
+.view-more-button:hover {
+  background-color: white;
+  transform: scale(1.03);
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .about-content {
+    gap: 30px;
+    padding: 90px 30px 120px;
+  }
+
+  .about-box {
+    width: 50%;
+  }
+
+  .what-we-do-box {
+    width: 35%;
+  }
+
+  .view-more-button {
+    left: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-page {
+    overflow-y: auto;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px 120px;
+  }
+
+  .about-box,
+  .what-we-do-box {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .what-we-do-box {
+    margin-top: 0;
+  }
+
+  .about-back-button {
+    right: 20px;
+    top: 20px;
+  }
+
+  .view-more-button {
+    position: relative;
+    left: auto;
+    bottom: auto;
+
+    display: block;
+    margin: -90px 0 40px 30px;
+  }
+}

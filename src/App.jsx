@@ -5,19 +5,27 @@ import Home from "./Home";
 import Login from "./Login";
 import TermsAndConditions from "./Terms";
 import Signup from "./Signup";
+import About from "./About";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* HOME */}
         <Route path="/" element={<Home />} />
 
+        {/* ABOUT CATER SHOT */}
+        <Route path="/about" element={<About />} />
+
+        {/* LOGIN PAGE */}
         {/* Signup.jsx = LOGIN PAGE */}
         <Route path="/login" element={<Signup />} />
 
+        {/* CREATE ACCOUNT PAGE */}
         {/* Login.jsx = CREATE ACCOUNT PAGE */}
         <Route path="/signup" element={<Login />} />
 
+        {/* TERMS & CONDITIONS */}
         <Route path="/terms" element={<TermsAndConditions />} />
       </Routes>
     </BrowserRouter>
