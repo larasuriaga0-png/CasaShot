@@ -5,9 +5,8 @@ import Home from "./Home";
 import Login from "./Login";
 import TermsAndConditions from "./Terms";
 import Signup from "./Signup";
-import About from "./About";
-import Services from "./Services";
 import Aboutus from "./Aboutus";
+import Services from "./Services";
 
 function App() {
   return (
@@ -18,10 +17,10 @@ function App() {
         <Route path="/" element={<Home />} />
 
         {/* ABOUT CATER SHOT */}
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<Aboutus />} />
 
         {/* OUR SERVICES */}
-        <Route path="/about-more" element={<Services />} />
+        <Route path="/services" element={<Services />} />
 
         {/* LOGIN PAGE */}
         {/* Signup.jsx = LOGIN PAGE */}
@@ -33,11 +32,6 @@ function App() {
 
         {/* TERMS & CONDITIONS */}
         <Route path="/terms" element={<TermsAndConditions />} />
-
-        {/* ABOUT US */}
-        <Route path="/about" element={<Aboutus />} />
-
-        <Route path="/services" element={<Services />} />
 
       </Routes>
     </BrowserRouter>

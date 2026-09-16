@@ -12,7 +12,7 @@ function Aboutus() {
   };
 
   const handleViewMore = () => {
-    navigate("/services");
+    navigate("/Aboutus");
   };
 
   return (

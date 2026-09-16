@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./About.css";
+import "./Aboutus.css";
 
 import backgroundImage from "./assets/event_food.jpg";
 
-function About() {
+function Aboutus() {
   const navigate = useNavigate();
 
   const handleBack = () => {
@@ -12,28 +12,31 @@ function About() {
   };
 
   const handleViewMore = () => {
-    navigate("/about-more");
+    navigate("/services");
   };
 
   return (
     <div
-      className="about-page"
+      className="aboutus-page"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
     >
-      <div className="about-overlay"></div>
+      <div className="aboutus-overlay"></div>
 
       {/* Back to Website */}
-      <button className="about-back-button" onClick={handleBack}>
+      <button
+        className="aboutus-back-button"
+        onClick={handleBack}
+      >
         Back to website
       </button>
 
       {/* Main Content */}
-      <div className="about-content">
+      <div className="aboutus-content">
 
-        {/* Left Section */}
-        <div className="about-box">
+        {/* Left Side */}
+        <div className="aboutus-box">
           <h1>
             About
             <br />
@@ -59,20 +62,22 @@ function About() {
           </p>
         </div>
 
-        {/* Right Section */}
-        <div className="what-we-do-box">
+        {/* Right Side */}
+        <div className="aboutus-what-box">
           <h2>What We Do</h2>
 
-          <div className="service">
+          <div className="aboutus-service">
             <h3>➤ &nbsp; Designing Your Event</h3>
+
             <p>
               We help create a beautiful and organized event setup based on
               your preferred theme, style, and design.
             </p>
           </div>
 
-          <div className="service">
+          <div className="aboutus-service">
             <h3>➤ &nbsp; Catering Your Event</h3>
+
             <p>
               We prepare and arrange the food based on your chosen catering
               package and number of guests (PAX), then cater directly to your
@@ -80,8 +85,9 @@ function About() {
             </p>
           </div>
 
-          <div className="service">
+          <div className="aboutus-service">
             <h3>➤ &nbsp; Adding Special Services</h3>
+
             <p>
               Make your event more memorable with optional add-ons such as a
               photobooth, photographer, decorations, and other available
@@ -93,11 +99,15 @@ function About() {
       </div>
 
       {/* View More */}
-      <button className="view-more-button" onClick={handleViewMore}>
+      <button
+        className="aboutus-view-more"
+        onClick={handleViewMore}
+      >
         VIEW MORE
       </button>
+
     </div>
   );
 }
 
-export default About;
+export default Aboutus;
