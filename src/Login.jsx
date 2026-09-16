@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
+import cateringImage from "./assets/di ako adik (1).png";
 
 function Login() {
   const navigate = useNavigate();
@@ -62,7 +63,7 @@ function Login() {
 
       <div className="login-image">
         <img
-          src="/catering.jpg"
+          src={cateringImage}
           alt="Catering event"
         />
       </div>
