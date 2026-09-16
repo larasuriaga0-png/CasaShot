@@ -11,8 +11,8 @@ function TermsAndConditions() {
       <nav className="navbar">
         <div className="nav-left">
           <Link to="/">Home</Link>
-          <a href="#about">About Us</a>
-          <a href="#faq">FAQ</a>
+          <a href="/#about">About Us</a>
+          <a href="/#faq">FAQ</a>
         </div>
 
         <div className="logo">
@@ -20,7 +20,7 @@ function TermsAndConditions() {
         </div>
 
         <div className="nav-right">
-          <a href="#gallery" className="underline-link">
+          <a href="/#gallery" className="underline-link">
             Customers Gallery
           </a>
           <Link to="/login">Login/Signup</Link>
@@ -56,9 +56,10 @@ function TermsAndConditions() {
         <section className="terms-section">
           <h3>Catering and Design</h3>
           <p>
-            The customer is responsible for providing the venue for the
-            event. CaterShot will provide the catering, food arrangement,
-            and event design at the customer's chosen location.
+            CaterShot will handle all food preparation, catering setup, and
+            event design based on the package selected by the customer.
+            Menu and design details will be confirmed prior to the event
+            date.
           </p>
         </section>
 
@@ -110,5 +111,6 @@ function TermsAndConditions() {
     </div>
   );
 }
+
 
 export default TermsAndConditions;

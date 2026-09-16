@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Login.css";
 import cateringImage from "./assets/di ako adik (1).png";
 
@@ -54,26 +54,18 @@ function Login() {
 
   return (
     <div className="login-page">
-      <button
-        className="back-button"
-        onClick={handleBackToWebsite}
-      >
+      <button className="back-button" onClick={handleBackToWebsite}>
         Back to website
       </button>
 
       <div className="login-image">
-        <img
-          src={cateringImage}
-          alt="Catering event"
-        />
+        <img src={cateringImage} alt="Catering event" />
       </div>
 
       <div className="login-card">
         <h1>CREATE ACCOUNT</h1>
 
-        <p className="already-account">
-          Already have an account?
-        </p>
+        <p className="already-account">Already have an account?</p>
 
         <form onSubmit={handleSubmit}>
           <div className="name-row">
@@ -125,25 +117,15 @@ function Login() {
 
             <label htmlFor="terms">
               I agree to the{" "}
-              <a
-                href="#"
-                onClick={(e) => e.preventDefault()}
-              >
+              <Link to="/terms" className="terms-link">
                 Terms & Conditions
-              </a>
+              </Link>
             </label>
           </div>
 
-          {error && (
-            <p className="error-message">
-              {error}
-            </p>
-          )}
+          {error && <p className="error-message">{error}</p>}
 
-          <button
-            type="submit"
-            className="create-button"
-          >
+          <button type="submit" className="create-button">
             CREATE ACCOUNT
           </button>
         </form>
