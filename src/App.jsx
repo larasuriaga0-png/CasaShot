@@ -7,6 +7,7 @@ import TermsAndConditions from "./Terms";
 import Signup from "./Signup";
 import About from "./About";
 import Services from "./Services";
+import Aboutus from "./Aboutus";
 
 function App() {
   return (
@@ -32,6 +33,11 @@ function App() {
 
         {/* TERMS & CONDITIONS */}
         <Route path="/terms" element={<TermsAndConditions />} />
+
+        {/* ABOUT US */}
+        <Route path="/about" element={<Aboutus />} />
+
+        <Route path="/services" element={<Services />} />
 
       </Routes>
     </BrowserRouter>
