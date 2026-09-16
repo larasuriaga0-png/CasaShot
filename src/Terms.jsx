@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./TermsAndConditions.css";
+import "./Terms.css";
 
 import logoImage from "./assets/logo.jpg";
 

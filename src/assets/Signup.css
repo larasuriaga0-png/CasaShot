@@ -1,0 +1,232 @@
+/* Main page */
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #5b0000;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Back to website button */
+.back-button {
+  position: absolute;
+  top: 33px;
+  right: 47px;
+
+  width: 164px;
+  height: 36px;
+
+  border: none;
+  border-radius: 25px;
+
+  background-color: #eeeeee;
+  color: #333333;
+
+  font-family: Georgia, serif;
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  background-color: #ffffff;
+}
+
+
+/* Login Card */
+.login-card {
+  width: 435px;
+  height: 425px;
+
+  background-color: #e4cfaf;
+
+  border-radius: 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 21px;
+
+  box-sizing: border-box;
+}
+
+
+/* LOGIN title */
+.login-card h1 {
+  margin: 0 0 57px 0;
+
+  color: #252525;
+
+  font-size: 36px;
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+
+/* Form */
+.login-card form {
+  width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Username and Password */
+.login-input {
+  width: 250px;
+  height: 43px;
+
+  box-sizing: border-box;
+
+  border: none;
+  outline: none;
+
+  border-radius: 15px;
+
+  background-color: #f1e1c8;
+
+  padding: 0 12px;
+
+  margin-bottom: 25px;
+
+  color: #730019;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.login-input::placeholder {
+  color: #730019;
+  opacity: 1;
+}
+
+
+/* Remember me */
+.remember-container {
+  width: 250px;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: -5px;
+  margin-bottom: 47px;
+}
+
+
+/* Checkbox */
+.remember-container input {
+  width: 13px;
+  height: 13px;
+
+  margin: 0 8px 0 0;
+
+  cursor: pointer;
+
+  accent-color: #ffffff;
+}
+
+
+/* Remember me text */
+.remember-container label {
+  color: #730019;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* Login button */
+.login-button {
+  width: 164px;
+  height: 33px;
+
+  border: none;
+  border-radius: 11px;
+
+  background-color: #8038df;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.login-button:hover {
+  background-color: #702dcc;
+}
+
+
+/* Error message */
+.login-error {
+  width: 250px;
+
+  margin: -35px 0 15px 0;
+
+  text-align: center;
+
+  color: #a00000;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* Create account text */
+.create-account-text {
+  margin-top: 25px;
+
+  color: #242424;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* Create Account link */
+.create-account-text a {
+  color: #242424;
+
+  font-weight: 800;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.create-account-text a:hover {
+  color: #730019;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+
+  .login-card {
+    width: 90%;
+    max-width: 435px;
+  }
+
+  .back-button {
+    right: 20px;
+    top: 20px;
+  }
+
+}
