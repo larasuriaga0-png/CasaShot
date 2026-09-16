@@ -1,0 +1,168 @@
+.services-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  color: white;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  overflow: hidden;
+}
+
+/* Dark overlay */
+
+.services-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.58);
+
+  z-index: 1;
+}
+
+/* Back to website */
+
+.services-back-button {
+  position: absolute;
+
+  top: 35px;
+  right: 45px;
+
+  width: 163px;
+  height: 36px;
+
+  border: none;
+  border-radius: 25px;
+
+  background-color: #eeeeee;
+  color: #333333;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+
+  cursor: pointer;
+
+  z-index: 5;
+
+  transition: 0.2s ease;
+}
+
+.services-back-button:hover {
+  background-color: white;
+  transform: scale(1.03);
+}
+
+/* Header */
+
+.services-header {
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+
+  padding-top: 82px;
+}
+
+.services-header p {
+  margin: 0 0 17px 0;
+
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
+.services-header h1 {
+  margin: 0;
+
+  font-size: 42px;
+  font-weight: 500;
+}
+
+/* Services container */
+
+.services-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 850px;
+
+  margin: 70px auto 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 80px;
+  row-gap: 72px;
+
+  text-align: center;
+}
+
+/* Individual service */
+
+.service-item {
+  width: 100%;
+}
+
+.service-item h2 {
+  margin: 0 0 39px 0;
+
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.service-item p {
+  margin: 0;
+
+  font-size: 16px;
+
+  line-height: 1.65;
+
+  font-weight: 400;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .services-container {
+    width: 90%;
+
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .services-page {
+    overflow-y: auto;
+  }
+
+  .services-header {
+    padding-top: 100px;
+  }
+
+  .services-header h1 {
+    font-size: 36px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+
+    margin-top: 50px;
+
+    row-gap: 55px;
+
+    padding-bottom: 60px;
+  }
+
+  .services-back-button {
+    top: 20px;
+    right: 20px;
+  }
+}

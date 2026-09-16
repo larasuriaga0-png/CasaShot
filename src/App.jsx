@@ -6,16 +6,21 @@ import Login from "./Login";
 import TermsAndConditions from "./Terms";
 import Signup from "./Signup";
 import About from "./About";
+import Services from "./Services";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+
         {/* HOME */}
         <Route path="/" element={<Home />} />
 
         {/* ABOUT CATER SHOT */}
         <Route path="/about" element={<About />} />
+
+        {/* OUR SERVICES */}
+        <Route path="/about-more" element={<Services />} />
 
         {/* LOGIN PAGE */}
         {/* Signup.jsx = LOGIN PAGE */}
@@ -27,6 +32,7 @@ function App() {
 
         {/* TERMS & CONDITIONS */}
         <Route path="/terms" element={<TermsAndConditions />} />
+
       </Routes>
     </BrowserRouter>
   );
